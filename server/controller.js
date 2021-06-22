@@ -8,8 +8,8 @@ module.exports = {
     },
 
     createGenre: (req, res) => {
-        const {title} = req.body
-        const index = genres.findIndex((genre) => {genre.title === title})
+        const { title } = req.body
+        const index = genres.findIndex((genre) => { genre.title === title })
         console.log(genres)
 
         if (index != -1) {
@@ -18,12 +18,26 @@ module.exports = {
             res.status(400).send('missing fields')
         } else {
             const newGenre = {
-            id: globalId,
-            title: title,
-        }
+                id: globalId,
+                title: title,
+            }
             globalId++
             genres.push(newGenre)
             res.status(200).send(newGenre)
         }
+    },
+    createBook: (req, res) => {
+        const  bookTitle   = req.body
+        // console.log(bookTitle)
+        
+        const newBook = {
+            id: globalId,
+            title: bookTitle,
+        }
+        
+        globalId++
+        books.push(newBook)
+        res.status(200).send(newBook)
+
     }
 }

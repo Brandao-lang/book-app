@@ -1,5 +1,5 @@
 # Booklet App 
-This app allows for books to be sorted by user inputed genre categories. Once a genre has been created, users may create a list of books within that category.
+This app allows for books to be sorted by user inputted genre categories. Once a genre has been created, users may create a list of books within that category.
 
 
 #### Required Install Commands

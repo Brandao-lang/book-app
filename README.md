@@ -5,7 +5,8 @@ This app allows for books to be sorted by user inputted genre categories. Once a
 #### Required Install Commands
 1. npm init -y
 2. npm install express
-3. npm install axios  cors may also be required
+3. npm install axios  
+  1. cors may also be required
 
 ### Languages
 1. html

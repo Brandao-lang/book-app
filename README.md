@@ -11,6 +11,10 @@ This app allows for books to be sorted by user inputted genre categories. Once a
 3. npm install axios  
     * __cors__ may also be required
     * npm install cors
+4. Add axios script to html
+```
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+```
 ### Languages
 1. html
 2. css
